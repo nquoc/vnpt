@@ -1,0 +1,256 @@
+body{
+  
+    
+        margin: 100px 10%;
+   background-image:  linear-gradient(to right, #cf413175, #4b34788c);
+   background-repeat: no-repeat;
+   height: 100vh;
+   
+
+}
+.input-checkbox{
+   
+    position: absolute;
+    animation-name: conca;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes conca {
+    from {left: 100%; }
+    to {left: 15%; }
+  }
+
+
+.theh1{
+    
+    color: black;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+@keyframes example {
+    from {top: -200px; color: black;}
+    to {top: -80px; color: crimson;}
+  }
+p{
+    font-size: 20px;
+}
+
+  .my-checkbox-x2 {
+    transform: scale(4);
+    margin: 30px 30px;
+    
+    
+  }
+  .hihi{
+    display: block;
+  }
+
+  label{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+.button{
+    display: none;
+}
+
+#dongy3{
+    display: none;
+}
+
+.button-choose{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    display: none;
+
+}
+
+
+button, button::after {
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 60px;
+    box-shadow: 6px 6px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    margin: 25px;
+    transition: all 0.5s;
+    align-items: center;
+    text-align: center;
+    left: -20px;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 20px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {  padding: 20px;}
+  
+  .modal-footer {
+    padding: 20px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+.guianh{
+    font-size: 10px;
+    background-color: #00E6F6;
+    padding: 8px 2px;
+    
+    
+}
+#txtReason{
+    height: 28px;
+    font-size: 15px ;
+    width: 80%;
+}
+#question{
+    display: none;
+}
