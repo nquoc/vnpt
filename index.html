@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Làm Người Yêu Anh Nhé Baby?">
+    <meta property="og:image" content="https://ysm-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces:auto,h_1200,q_auto,w_1200/v1/yale-medicine/live-prod/ym_new/images/a7be94ec-644f-4141-a3c0-525ea2c1cb2d_tcm990-378518.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssreset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -14,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>EM COÁ YÊU ANH KHUM</title>
 
 </head>
@@ -25,224 +27,225 @@
 
     <h1 align="center" class="theh1">EM COÁ YÊU ANH KHUM? HIHI</h1>
 
-<div class="input-checkbox" id="input-checkbox">
-    <div class="hihi">
-        <input id="dongy" type="checkbox" class="my-checkbox-x2" onclick="checkbox()"><label for="boxid" class="yes"> Đồng Ý</label>
+    <div class="input-checkbox" id="input-checkbox">
+        <div class="hihi">
+            <input id="dongy" type="checkbox" class="my-checkbox-x2" onclick="checkbox()"><label for="boxid"
+                class="yes"> Đồng Ý</label>
+        </div>
+        <div class="hihi">
+            <input id="boxid" type="checkbox" class="my-checkbox-x2" onclick="checkbox()"> <label for="boxid"
+                class="no">Không Đồng Ý</label>
+        </div>
+        <div class="hihi" id="dongy3">
+            <input id="inputdongy" type="checkbox" class="my-checkbox-x2" onclick="showmodal()"> <label for="boxid"
+                class="no">Đồng Ý Cả 3 luôn</label>
+        </div>
+
+
     </div>
-    <div class="hihi">
-        <input id="boxid" type="checkbox" class="my-checkbox-x2" onclick="checkbox()"> <label for="boxid" class="no">Không Đồng Ý</label>
+
+
+    <div class="button-choose" id="buttonchoose">
+        <button id="yes" type="button" class="btn btn-danger btn-lg">Oki nè EM đồng ý &lt;333 </button>
+        <button id="no" type="button" class="btn btn-info btn-lg">No. Anh mơ à :333 </button>
     </div>
-    <div class="hihi" id="dongy3">
-        <input id="inputdongy" type="checkbox" class="my-checkbox-x2"  onclick="showmodal()"> <label for="boxid" class="no">Đồng Ý Cả 3 luôn</label>
-    </div>
 
 
-</div>
-
-
-<div class="button-choose" id="buttonchoose">
-    <button id="yes" type="button" class="btn btn-danger btn-lg">Oki nè EM đồng ý &lt;333 </button>
-    <button id="no" type="button" class="btn btn-info btn-lg">No. Anh mơ à :333 </button>
-</div>
-
-
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <h2 align="center">Hi EM YÊU</h2>
-      </div>
-      <div class="modal-body">
-        <p>NẾU CÂU TRẢ LỜI TRÊN LÀ BẮT BUỘC!!</p>
-        <br>
-        <p>EM HÃY NHẤN NÚT VÀ CHỌN TRẢ LỜI LẠI NHÉ EM IU!!</p>
-      </div>
-      <div class="modal-footer">
-        <h3 align="center">!!!!!!!!!HIHI!!!!!!!!!!</h3>
-      </div>
-    </div>
-  
-  </div>
-
-<div id="question">
-    <div >
+    <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2 align="center">Anh Biết Là EM ĐỒng Ý Mà!!</h2>
-          </div>
-          <div class="modal-body">
-            <input type="text" onmousemove="textGenerate()" id="txtReason">
-            <div onClick={shareVia} class="guianh" style="display: inline;">Gửi Anh</div>
-          </div>
-          <div class="modal-footer">
-            <h3 align="center">!!!!!!!!!YÊU EM!!!!!!!!!!</h3>
-          </div>
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 align="center">Hi EM YÊU</h2>
+            </div>
+            <div class="modal-body">
+                <p>NẾU CÂU TRẢ LỜI TRÊN LÀ BẮT BUỘC!!</p>
+                <br>
+                <p>EM HÃY NHẤN NÚT VÀ CHỌN TRẢ LỜI LẠI NHÉ EM IU!!</p>
+            </div>
+            <div class="modal-footer">
+                <h3 align="center">!!!!!!!!!HIHI!!!!!!!!!!</h3>
+            </div>
         </div>
-      
-      </div>
-    
+
+    </div>
+
+    <div id="question">
+        <div>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 align="center">Anh Biết Là EM ĐỒng Ý Mà!!</h2>
+                </div>
+                <div class="modal-body">
+                    <input type="text" onmousemove="textGenerate()" id="txtReason">
+                   <a href="https://www.facebook.com/nguyenaiquoc.01/" target="_blank"> <div class="guianh" style="display: inline;">Gửi Anh</div></a>
+                </div>
+                <div class="modal-footer">
+                    <h3 align="center">!!!!!!!!!YÊU EM!!!!!!!!!!</h3>
+                </div>
+            </div>
+
+        </div>
 
 
-</div>
+
+    </div>
 
 
-<script>
+    <script>
 
-const data = {
-  title: document.title,
-  text: 'Hello EM',
-  url: 'https://www.facebook.com/nguyenaiquoc.01/',
-}
-const shareVia = window.navigator.share(data);
-
-
-function accfb(){
-
-}
+        const data = {
+            title: document.title,
+            text: 'Hello EM',
+            url: 'https://www.facebook.com/nguyenaiquoc.01/',
+        }
+        const shareVia = window.navigator.share(data);
 
 
-function textGenerate() {
-    var n = "";
-    var text = " Thích thì thôi không cần lý do :<< hihi ";
-    var a = Array.from(text);
-    var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
-    var count = textVal.length;
-    if (count >0) {
-        for (let i = 1; i <= count; i++) {
-            n = n + a[i];
-            if (i == text.length + 1) {
-                $('#txtReason').val("");
-                n = "";
-                break;
+        
+
+
+        function textGenerate() {
+            var n = "";
+            var text = " Thích thì thôi không cần lý do :<< hihi ";
+            var a = Array.from(text);
+            var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
+            var count = textVal.length;
+            if (count > 0) {
+                for (let i = 1; i <= count; i++) {
+                    n = n + a[i];
+                    if (i == text.length + 1) {
+                        $('#txtReason').val("");
+                        n = "";
+                        break;
+                    }
+                }
+            }
+            $('#txtReason').val(n);
+            setTimeout("textGenerate()", 1);
+        }
+
+
+        function switchButton() {
+
+            var leftNo = $('#no').css("left");
+            var topNO = $('#no').css("top");
+            var leftY = $('#yes').css("left");
+            var topY = $('#yes').css("top");
+            $('#no').css("left", leftY);
+            $('#no').css("top", topY);
+
+        }
+
+
+        function moveButton() {
+
+            if (screen.width <= 500) {
+                var x = Math.random() * 200;
+                var y = Math.random() * 500;
+            } else {
+                var x = Math.random() * 200;
+                var y = Math.random() * 500;
+            }
+            var left = x + 'px';
+            var top = y + 'px';
+            $('#no').css("left", left);
+            $('#no').css("top", top);
+
+        }
+        var n = 0;
+        $('#no').mousemove(function () {
+            if (n < 1)
+                switchButton();
+            if (n > 1)
+                moveButton();
+            n++;
+        });
+        $('#no').click(() => {
+            if (screen.width >= 900)
+                switchButton();
+        })
+
+
+
+
+        let inputcheckbox = document.getElementById("input-checkbox");
+        let buttonchoose = document.getElementById("buttonchoose");
+        let question = document.getElementById("question");
+
+
+        $('#boxid').click(function () {
+            if ($(this).is(':checked')) {
+                $(this).siblings('.no').html('Hi!Dạ Đồng Ý');
+            } else {
+                $(this).siblings('.no').html('Không Đồng Ý');
+            }
+        });
+        function checkbox() {
+            let dongy = document.getElementById("dongy");
+            let boxid = document.getElementById("boxid");
+            let dongy3 = document.getElementById("dongy3");
+            if (dongy.checked == true && boxid.checked == true) {
+                dongy3.style.display = "block";
             }
         }
-    }
-    $('#txtReason').val(n);
-    setTimeout("textGenerate()", 1);
-}
 
+        function showmodal() {
 
-function switchButton() {
-   
-    var leftNo = $('#no').css("left");
-    var topNO = $('#no').css("top");
-    var leftY = $('#yes').css("left");
-    var topY = $('#yes').css("top");
-    $('#no').css("left", leftY);
-    $('#no').css("top", topY);
-   
-}
-
-
-function moveButton() {
-
-    if (screen.width<=500) {
-        var x = Math.random() * 200;
-        var y = Math.random() * 500;
-    } else{
-        var x = Math.random() * 200;
-        var y = Math.random() * 500;
-    }
-    var left = x + 'px';
-    var top = y + 'px';
-    $('#no').css("left", left);
-    $('#no').css("top", top);
-
-}
-var n = 0;
-$('#no').mousemove(function() {
-    if (n < 1)
-        switchButton();
-    if (n > 1)
-        moveButton();
-    n++;
-});
-$('#no').click(() => {
-    if (screen.width>=900)
-        switchButton();
-})
-
-
-
-
-    let inputcheckbox = document.getElementById("input-checkbox");
-    let buttonchoose = document.getElementById("buttonchoose");
-    let question = document.getElementById("question");
-   
-    
-    $('#boxid').click(function () {
-        if ($(this).is(':checked')) {
-            $(this).siblings('.no').html('Hi!Dạ Đồng Ý');
-        } else {
-            $(this).siblings('.no').html('Không Đồng Ý');
+            let inputdongy = document.getElementById("inputdongy");
+            if (inputdongy.checked == true) {
+                modal.style.display = "block";
+            }
         }
-    });
-    function checkbox() {
-        let dongy = document.getElementById("dongy");
-        let boxid = document.getElementById("boxid");
-        let dongy3 = document.getElementById("dongy3");
-        if (dongy.checked == true && boxid.checked == true) {
-            dongy3.style.display = "block";
-        }
-    }
-
-    function showmodal() {
-        
-        let inputdongy = document.getElementById("inputdongy");
-        if (inputdongy.checked == true) {
-            modal.style.display = "block";
-        }
-    }
-    
 
 
-    var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
 
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on the button, open the modal
+        // When the user clicks on the button, open the modal
 
-    // btn.onclick = function () {
-    //     modal.style.display = "block";
-    // }
+        // btn.onclick = function () {
+        //     modal.style.display = "block";
+        // }
 
-    // When the user clicks on <span> (x), close the modal
+        // When the user clicks on <span> (x), close the modal
 
         var yes = document.getElementById("yes");
 
         yes.onclick = function () {
             buttonchoose.style.display = "none";
             question.style.display = "block";
-        
-    }
 
-    span.onclick = function () {
-        modal.style.display = "none";
-        setTimeout(function(){  
-                inputcheckbox.style.display = "none";
-                buttonchoose.style.display = "block";
-            },1000)
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-            setTimeout(function(){  
-                inputcheckbox.style.display = "none";
-                buttonchoose.style.display = "block";
-            },1000)
-            
-           
         }
-    }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+            setTimeout(function () {
+                inputcheckbox.style.display = "none";
+                buttonchoose.style.display = "block";
+            }, 1000)
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                setTimeout(function () {
+                    inputcheckbox.style.display = "none";
+                    buttonchoose.style.display = "block";
+                }, 1000)
+
+
+            }
+        }
 
 
 
@@ -256,14 +259,13 @@ $('#no').click(() => {
 
 
 
-</script>
+    </script>
 
 
 
 
-    
+
 </body>
 
 
 </html>
-
